@@ -1,0 +1,75 @@
+body {
+  background: #ffffe0;
+}
+
+main > img {
+  padding-bottom: 24px;
+}
+
+header:nth-of-type(
+    2
+  ) {
+  color: #ff5a50;
+  font-weight: bolder;
+  margin-top: 68px;
+}
+
+header:nth-of-type(
+    2
+  )
+  ul {
+  list-style-image: url("./resources/img/listIcon.png");
+}
+
+hr {
+  margin: 12px 0;
+  border: 1px dotted
+    red;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  border: 2px solid
+    red;
+  background: rgb(
+    255,
+    165,
+    0,
+    0.75
+  );
+  /* Hier heeft Quinten de Opacity property gebruikt zodat oa de content ook wordt beïnvloed? */
+  border-radius: 60px
+    0;
+  padding: 0 12px;
+}
+
+article img {
+  float: left;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 20px 20px;
+}
+
+article div h2,
+article
+  div
+  p:first-of-type {
+  padding-bottom: 12px;
+}
+
+article p span {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer div * {
+  padding-top: 12px;
+  text-align: center;
+}
