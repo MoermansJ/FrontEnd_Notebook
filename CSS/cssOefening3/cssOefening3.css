@@ -6,25 +6,19 @@ main > img {
   padding-bottom: 24px;
 }
 
-header:nth-of-type(
-    2
-  ) {
+header:nth-of-type(2) {
   color: #ff5a50;
   font-weight: bolder;
   margin-top: 68px;
 }
 
-header:nth-of-type(
-    2
-  )
-  ul {
+header:nth-of-type(2) ul {
   list-style-image: url("./resources/img/listIcon.png");
 }
 
 hr {
   margin: 12px 0;
-  border: 1px dotted
-    red;
+  border: 1px dotted red;
 }
 
 img {
@@ -33,37 +27,30 @@ img {
 }
 
 article {
-  display: flex;
-  align-items: center;
-  border: 2px solid
-    red;
-  background: rgb(
-    255,
-    165,
-    0,
-    0.75
-  );
+  border: 2px solid red;
+  background: rgb(255, 165, 0, 0.75);
   /* Hier heeft Quinten de Opacity property gebruikt zodat oa de content ook wordt beïnvloed? */
-  border-radius: 60px
-    0;
+  border-radius: 60px 0;
   padding: 0 12px;
 }
 
 article img {
   float: left;
-  max-width: 200px;
-  max-height: 200px;
+  height: 40vw;
+  max-height: 220px;
   margin: 20px 20px;
+  transition: transform 0.6s ease-out;
 }
 
-article div h2,
-article
-  div
-  p:first-of-type {
-  padding-bottom: 12px;
+article img:hover {
+  transform: scale(1.4);
 }
 
-article p span {
+article > div {
+  padding: 20px 0px;
+}
+
+article span {
   color: red;
   font-style: italic;
   font-weight: bold;

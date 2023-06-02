@@ -1,0 +1,79 @@
+:root {
+  --lightGreen: #f1f1c1;
+  --darkGreen: #008000;
+  --limeGreen: #96c300;
+  --backgroundGreen: #91ee90;
+}
+
+body {
+  background: var(--backgroundGreen);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: var(--darkGreen);
+}
+
+main > div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 4px solid var(--darkGreen);
+  background: var(--lightGreen);
+  padding: 1.5em 0;
+  margin-bottom: 1em;
+  width: 95%;
+}
+
+div > img {
+  border: 2px solid black;
+  max-height: 200px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+#card-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-suggestion-description {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.card-customOrder > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-bold {
+  font-weight: bolder;
+}
+
+.ugly {
+  padding: 4px;
+  margin-left: 1em;
+  background: limegreen;
+  color: ghostwhite;
+  font-weight: bold;
+  border-radius: 12px;
+}

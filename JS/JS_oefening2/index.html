@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style.css">
+		<script type=" text/javascript" src="script.js" defer></script>
+		<title>JS Oefening 2</title>
+	</head>
+
+	<body>
+		<main>
+			<h1>Resto 'Het Krokantje'</h1>
+
+			<div class="card-suggestion"">
+				<img src=" res/img/Foto1.jpg" alt="placeholder" id="dish-image">
+				<div class="card-suggestion-description">
+					<b>Naam: </b>
+					<p class="text-orange text-bold" id="dish-info-name">Sprinkhaan</p>
+					<b>Prijs :</b>
+					<p class="text-red text-bold" id="dish-info-price">€5.99</p>
+					<b>Beschrijving: </b>
+					<p id="dish-info-description">Krokante sprinkhaan op een bedje van kakkerlak</p>
+				</div>
+			</div>
+
+			<div class="card-customOrder">
+				<form>
+					<b><label for="course-selection">Gang :</label></b>
+					<select name="course-selection" id="course-selection" required>
+					</select>
+
+					<b>Keuze :</b>
+					<select name="keuze" id="dish-selection" size="" required>
+						<!--  size attribute on <select> breaks JS -->
+					</select>
+
+					<b>Aantal personen :</b>
+					<input type="number" value="1" id="aantal" min="1" required />
+
+					<button id="submit">Toevoegen</button>
+				</form>
+
+			</div>
+
+			<div id="card-overview">
+
+			</div>
+
+		</main>
+
+	</body>
+
+</html>
